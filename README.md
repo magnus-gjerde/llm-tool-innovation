@@ -8,13 +8,13 @@ This project enables the evaluation of OpenAI's GPT models and Anthropic's Claud
 
 This project enables researchers to replicate our results and to modify the tasks as they see fit.
 
-Here's an example of what a task looks like in the standard condition:
+There are three experimental conditions: standard, distractor, and image. Here's an example of what a task looks like in the standard condition:
 
 >Your task is to take a baked and hot cake out of the oven. Normally, you would use oven mittens to accomplish this task. However, oven mittens are not available to you. At your disposal, you have the objects listed below. Which of these would you use to accomplish the task?
 >
 >A balloon --- A saucepan lid --- A beach towel --- A chef's hat
 
-The distractor condition has 9 options instead of 4, and the image condition replaces the 4 option objects with images.
+The distractor condition has 9 options instead of 4, and the image condition replaces the 4 text options with images.
 
 
 ## Project Workflow
