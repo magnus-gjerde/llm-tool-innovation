@@ -85,5 +85,6 @@ The project dependencies are listed in `requirements.txt` and can be installed v
 pip install -r requirements.txt
 ```
 
-## Results for Claude 3.5 Sonnet and GPT-4o 
+
+### Results for Claude 3.5 Sonnet, GPT-4o, and humans 
 ![](results_claude3-5_and_gpt-4o.png)
