@@ -45,11 +45,12 @@ NB: My experience has been that automated LLM answer evaluations are not 100% ac
 The averaging script, taking the binary data as input, will compute two types of averages. First, it will compute model_run averages. One "model_run" is a single round of model answers to the 20 questions. For example, if you configure a test script to generate 10 answers per question, there are 10 model_runs (see workflow diagram). Second, the script will compute question averages, the accuracy of the model per individual question. 
 
 
-**Workflow Diagram (click to see full size)**
-
-<a href="https://raw.githubusercontent.com/magnus-gjerde/llm-tool-innovation/refs/heads/main/workflow.png" target="_blank">
-    <img src="workflow.png" alt="Workflow Diagram" width="400"/>
-</a>
+**Workflow Diagram**
+<br>
+<details>
+<summary>Click here to see Workflow Diagram</summary>
+<img src="workflow.png" alt="Workflow Diagram"/>
+</details>
 
 
 ## Scripts Overview
