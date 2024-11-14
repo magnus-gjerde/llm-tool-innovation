@@ -18,7 +18,7 @@ The distractor condition has 9 options instead of 4, and the image condition rep
 
 
 ## Project Workflow
-The workflow consists of data generation, evaluation, and averaging scripts. There are three gpt test scripts and three claude tests scripts, each corresponding to a different experimental condition.
+The workflow consists of data generation and data processing scripts. There are three gpt test scripts and three claude tests scripts, each corresponding to a different experimental condition.
 
 In each of these scripts, one can easily configure the number of responses per question, the OpenAI/Anthropic models to be prompted, the model temperature, and whether to use CoT prompting (only possible in standard and image conditions). For example:
 
@@ -31,6 +31,7 @@ cot = False     # activate or deactivate the Chain-of-Thought prompt
 ```
 
 The `test_list_dict.py` contains the specifications to generate the 20 prompts. If you want to change or add tasks, you can easily do so by changing this list.
+The project workflow diagram shows how to run the project and presents example output.
 
 **Step 1**: Configure and run a model test script. The models will be prompted with the test prompts and the model text output will be stored in a csv file. 
 
@@ -42,7 +43,7 @@ NB: My experience has been that automated LLM answer evaluations are not 100% ac
 
 **Step 3**: Configure and run the data_averaging script. Set the configuration so that it matches the model whose data you want to process. 
 
-The averaging script, taking the binary data as input, will compute two types of averages. First, it will compute model_run averages. One "model_run" is a single round of model answers to the 20 questions. For example, if you configure a test script to generate 10 answers per question, there are 10 model_runs (see workflow diagram). Second, the script will compute question averages, the accuracy of the model per individual question. 
+The averaging script, taking the binary data as input, will compute two types of averages. First, it will compute model_run averages. One "model_run" is a single round of model answers to the 20 questions. For example, if you configure a test script to generate 10 answers per question, there are 10 model_runs (see workflow diagram). Second, the script will compute question averages, the accuracy of the model per individual question. The model_run and question averages will be stored in two separate csv files.
 
 
 **Workflow Diagram**
