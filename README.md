@@ -83,3 +83,7 @@ The averaging script, taking the binary data as input, will compute two types of
 The project dependencies are listed in `requirements.txt` and can be installed via pip:
 ```bash
 pip install -r requirements.txt
+```
+
+## Results for Claude 3.5 Sonnet and GPT-4o 
+![](results_claude3-5_and_gpt-4o.png)
