@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
+![Python](https://img.shields.io/badge/python-v3.12+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 # LLM Tool Innovation Evaluation Project
@@ -12,7 +12,7 @@ Here's an example of what a task looks like in the standard condition:
 
 >Your task is to take a baked and hot cake out of the oven. Normally, you would use oven mittens to accomplish this task. However, oven mittens are not available to you. At your disposal, you have the objects listed below. Which of these would you use to accomplish the task?
 >
->A balloon --- A saucepan lid --- A beach towel --- A chef’s hat
+>A balloon --- A saucepan lid --- A beach towel --- A chef's hat
 
 The distractor condition has 9 options instead of 4, and the image condition replaces the 4 option objects with images.
 
@@ -29,6 +29,8 @@ temperature = 0
 model_runs = 10 # number of answers to be collected per question
 cot = False     # activate or deactivate the Chain-of-Thought prompt
 ```
+
+The `test_list_dict.py` contains the specifications to generate the 20 prompts. If you want to change or add tasks, you can easily do so by changing this list.
 
 **Step 1**: Configure and run a model test script. The models will be prompted with the test prompts and the model text output will be stored in a csv file. 
 
@@ -49,13 +51,13 @@ The averaging script, taking the binary data as input, will compute two types of
 - **Data Generation Scripts**:
   - `gpt_test_standard.py`: Collects data from GPT models in the standard condition.
   - `gpt_test_distractor.py`: Collects data from GPT models in the distractor condition.
-  - `gpt_test_image.py`: Collects data from GPT models in the image condition (uses `encode_images.py` and the images from the "images" folder).
+  - `gpt_test_image.py`: Collects data from GPT models in the image condition.
   - `claude_test_standard.py`: Collects data from Claude models in the standard condition.
   - `claude_test_distractor.py`: Collects data from Claude models in the distractor condition.
-  - `encode_images.py`: Function for encoding images in base64 format, used in the image condition scripts.
-  - `claude_test_image.py`: Collects data from Claude models in the image condition (uses `encode_images.py` and the images from the "images" folder).
-  - `test_list_dict.py`: Contains task specifications shared across data generation ction scripts.
-  - `encode_images.py`: Function for encoding images in base64 format, used in the image condition scripts.
+  - `claude_test_image.py`: Collects data from Claude models in the image condition.
+  - *Supporting scripts*
+    - `test_list_dict.py`: Contains task specifications shared across data generation scripts.
+    - `encode_images.py`: Function for encoding images from the "images" folder in base64 format, used in the image condition scripts.
 
 - **Data Processing Scripts**:
   - `evaluation_manual.py`: Iterates through LLM output and lets you manually check and rate answers, produces binary data (correct/incorrect).
