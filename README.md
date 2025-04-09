@@ -4,7 +4,7 @@
 # LLM Tool Innovation Evaluation Project
 
 ## Project Overview
-This project enables the evaluation of OpenAI's GPT models and Anthropic's Claude models on an original set of 20 tool innovation tasks. The task structure is based on the tasks in Yiu, Kosoy, and Gopnik's [2023](https://journals.sagepub.com/doi/10.1177/17456916231201401) study. The tasks are novel and designed for a paper in collaboration with [Vanessa Cheung](https://scholar.google.com/citations?user=_9RYSjEAAAAJ&hl=en) and [David Lagnado](https://scholar.google.com.sg/citations?user=AMb1WywAAAAJ&hl=en). I will provide a link to our preprint when it's ready. 
+This project enables the evaluation of OpenAI's GPT models and Anthropic's Claude models on an original set of 20 tool innovation tasks. The task structure is based on the tasks in Yiu, Kosoy, and Gopnik's [2023](https://journals.sagepub.com/doi/10.1177/17456916231201401) study. The tasks are novel and designed for a paper in collaboration with [Vanessa Cheung](https://scholar.google.com/citations?user=_9RYSjEAAAAJ&hl=en) and [David Lagnado](https://scholar.google.com.sg/citations?user=AMb1WywAAAAJ&hl=en). Preprint: [https://arxiv.org/abs/2502.16606](https://arxiv.org/abs/2502.16606) 
 
 This project enables researchers to replicate our results and to modify the tasks as they see fit.
 
